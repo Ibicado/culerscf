@@ -13,13 +13,22 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 25vh;
+    width: 1200px;
     margin-top: 45px;
+    max-width: 100%;
+    margin-bottom: auto;
 }
 
 .h {
-    margin-top: 220px;
+    margin-top: 100px;
     font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 3px 4px 7px rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 640px) and (min-width: 320px){
+    .h {
+        margin-top: 50px;
+    }
 }
 
 h1{
@@ -38,4 +47,97 @@ h1{
 
 .en {
     margin-top: 2%;
+}
+
+.image_full{
+    display:block;
+   }
+ 
+  .image_mobile{
+   display:none;
+  }
+ 
+ @media (max-width: 640px) and (min-width: 320px){
+   .image_full{
+    display:none;
+   }
+ 
+   .image_mobile{
+    display:block;
+   }
+ }
+
+.image_full {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    margin-top: 45px;
+    max-width: 100%;
+    margin-bottom: auto;
+    border-radius: 30px;
+    box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.8);
+}
+
+.image_mobile {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    margin-top: 45px;
+    max-width: 100%;
+    margin-bottom: auto;
+}
+
+.linkss, .linkss:active, .linkss:visited{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+.button-9 {
+appearance: button;
+backface-visibility: hidden;
+background-color: #00062a;
+border-radius: 6px;
+border-width: 0;
+box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+box-sizing: border-box;
+color: rgb(255, 255, 255);
+cursor: pointer;
+font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+font-size: 40px;
+height: 100px;
+line-height: 1.15;
+margin: 0;
+position: absolute;
+margin-top: 100px;
+left: 50%;
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+outline: none;
+overflow: hidden;
+padding: 0 40px;
+text-align: center;
+text-transform: none;
+transition: all .2s,box-shadow .08s ease-in;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+margin-bottom: auto;
+}
+
+.button-9:disabled {
+  cursor: default;
+}
+
+.button-9:focus {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+@media (max-width: 640px) and (min-width: 320px){
+    .button-9 {
+        font-size: 20px;
+        height: 40px;
+        padding: 0 15px;
+
+    }
 }
